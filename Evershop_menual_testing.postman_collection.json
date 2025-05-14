@@ -1,0 +1,768 @@
+{
+	"info": {
+		"_postman_id": "dd31a7d9-f0bf-425e-b896-4d2cf76652b2",
+		"name": "Evershop_menual_testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40084678"
+	},
+	"item": [
+		{
+			"name": "search_for_shoe",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.evershop.io/search?keyword=nike-react-phantom-run-flyknit-2&ajax=true",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "nike-react-phantom-run-flyknit-2"
+						},
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "search_for_shoe",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.evershop.io/?keyword=Nike react phantom run flyknit 2",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"evershop",
+								"io"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "Nike react phantom run flyknit 2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "25149"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Feb 2025 07:11:48 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"623d-3iQBS0JsLOqehgziJARE+ZdVet4\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=s%3AQdHUrJz0E3_vqRy5vb0md-PS0W-MtgZc.bNs31yCbOWm%2FHaXVYUwsDAZkNLpRKpYIZdWZkxfWuaw; Path=/; Expires=Mon, 03 Feb 2025 07:11:48 GMT; HttpOnly"
+						},
+						{
+							"key": "request-context",
+							"value": "appId=cid-v1:"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"graphqlResponse\": {\n        \"e248uix4m5ibqbk6\": \"https://demo.evershop.io/search\",\n        \"e248uix4m5ibqbk7\": \"https://demo.evershop.io/cart\",\n        \"e248uix4m5ibqbk8\": null,\n        \"e248uix4m5ibqbk9\": {\n            \"breadcrumbs\": [\n                {\n                    \"title\": \"Home\",\n                    \"url\": \"/\"\n                },\n                {\n                    \"title\": \"An Amazing EverShop Store\",\n                    \"url\": \"https://demo.evershop.io/?keyword=Nike%20react%20phantom%20run%20flyknit%202\"\n                }\n            ]\n        },\n        \"e248uix4m5ibqbka\": {\n            \"copyRight\": \"© 2022 Evershop. All Rights Reserved.\"\n        },\n        \"e248uix4m5ibqbkb\": {\n            \"title\": \"An Amazing EverShop Store\",\n            \"description\": \"An Amazing EverShop Store\"\n        },\n        \"e248uix4m5ibqbkc\": {\n            \"headTags\": {\n                \"metas\": [\n                    {\n                        \"name\": \"robots\",\n                        \"content\": \"noindex\",\n                        \"charSet\": null,\n                        \"httpEquiv\": null,\n                        \"property\": null,\n                        \"itemProp\": null,\n                        \"itemType\": null,\n                        \"itemID\": null,\n                        \"lang\": null\n                    }\n                ],\n                \"links\": [],\n                \"scripts\": [],\n                \"base\": null\n            }\n        },\n        \"e248uix4m5ibqbkd\": {\n            \"logo\": {\n                \"src\": null,\n                \"alt\": null,\n                \"width\": null,\n                \"height\": null\n            }\n        },\n        \"e248uix4m5ibqbke\": null,\n        \"e248uix4m5ibqbkf\": \"https://demo.evershop.io/account\",\n        \"e248uix4m5ibqbkg\": \"https://demo.evershop.io/account/login\",\n        \"e2hc52qm6naaesc\": {\n            \"menus\": [\n                {\n                    \"id\": \"2hc52qm6naaeso\",\n                    \"name\": \"Shop ❤️\",\n                    \"url\": \"javascript:void(0)\",\n                    \"type\": \"custom\",\n                    \"uuid\": \"javascript:void(0)\",\n                    \"children\": [\n                        {\n                            \"name\": \"Men\",\n                            \"url\": \"/men\",\n                            \"type\": \"custom\",\n                            \"uuid\": \"/men\"\n                        },\n                        {\n                            \"name\": \"Women\",\n                            \"url\": \"/women\",\n                            \"type\": \"custom\",\n                            \"uuid\": \"/women\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": \"2hc52qm6naaesr\",\n                    \"name\": \"About us\",\n                    \"url\": \"/page/about-us\",\n                    \"type\": \"custom\",\n                    \"uuid\": \"/page/about-us\",\n                    \"children\": []\n                }\n            ],\n            \"isMain\": true,\n            \"className\": \"\"\n        },\n        \"e2hc52qm6naaesf\": {\n            \"text\": [\n                {\n                    \"id\": \"r__63dcb2ab-c2a4-40fc-a995-105bf1484b06\",\n                    \"size\": 1,\n                    \"columns\": [\n                        {\n                            \"id\": \"c__354832f1-6fe1-4845-8cbb-7e094082810e\",\n                            \"size\": 1,\n                            \"data\": {\n                                \"time\": 1726456666591,\n                                \"blocks\": [\n                                    {\n                                        \"id\": \"KRtRWBBVvm\",\n                                        \"type\": \"raw\",\n                                        \"data\": {\n                                            \"html\": \"\\n            <div style=\\\"min-height: 500px; margin-top: -3rem; background: linear-gradient(135deg, #aad3ff, #0056b3); display: flex; align-items: center; justify-content: center;\\\">\\n  \\n                <div style=\\\"display: flex; align-items: center; max-width: 1200px; width: 100%; padding: 0 20px;flex-wrap:wrap\\\">\\n    \\n                    <div style=\\\"flex: 1 0 300px; text-align: center; padding:30px\\\">\\n      \\n                        <svg width=\\\"300\\\" height=\\\"300\\\" viewBox=\\\"0 0 128 146\\\" fill=\\\"none\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\" style=\\\"fill: #0056b3; color: #0056b3;\\\">\\n        \\n                            <path d=\\\"M32.388 18.0772L1.15175 36.1544L1.05206 72.5081L0.985596 108.895L32.4213 127.039C49.7009 137.008 63.9567 145.182 64.1228 145.182C64.289 145.182 72.8956 140.264 83.2966 134.283C93.6644 128.268 107.82 120.127 114.732 116.139L127.26 108.895V101.119V93.3102L126.529 93.7089C126.097 93.9415 111.941 102.083 95.06 111.853C78.1459 121.622 64.156 129.531 63.9567 129.498C63.724 129.431 52.5587 123.051 39.1005 115.275L14.6099 101.152V72.5746V43.9967L25.6756 37.6165C31.7234 34.1274 42.8223 27.7472 50.2991 23.4273C57.7426 19.1073 63.9899 15.585 64.1228 15.585C64.2557 15.585 72.9288 20.5362 83.3963 26.5841L113.902 43.9967L118.713 41.1657L127.26 36.1544L113.902 28.5447C103.334 22.2974 64.3554 -0.033191 64.0231 3.90721e-05C63.8237 3.90721e-05 49.568 8.14142 32.388 18.0772Z\\\" fill=\\\"#0056b3\\\"></path>\\n\\n                            <path d=\\\"M96.0237 54.1983C78.9434 64.0677 64.721 72.2423 64.4219 72.3088C64.0896 72.4084 55.7488 67.7562 44.8826 61.509L25.9082 50.543V58.4186L25.9414 66.2609L44.3841 76.8945C54.5193 82.743 63.1591 87.6611 63.5911 87.8272C64.2557 88.0598 68.9079 85.5011 95.5585 70.1156C112.705 60.1798 126.861 51.9719 127.027 51.839C127.16 51.7061 127.227 48.1505 127.194 43.9302L127.094 36.2541L96.0237 54.1983Z\\\" fill=\\\"#0056b3\\\"></path>\\n\\n                            <path d=\\\"M123.771 66.7261C121.943 67.7562 107.854 75.8976 92.4349 84.8033C77.0161 93.7089 64.289 100.986 64.1228 100.986C63.9567 100.986 55.3501 96.0683 44.9491 90.0869L26.0744 79.1874L25.9747 86.8303C25.9082 92.6788 26.0079 94.5729 26.307 94.872C26.9383 95.4369 63.7241 116.604 64.1228 116.604C64.4551 116.604 126.496 80.8821 127.027 80.4169C127.16 80.284 127.227 76.7284 127.194 72.4749L127.094 64.7987L123.771 66.7261Z\\\" fill=\\\"#0056b3\\\"></path>\\n\\n                        </svg>\\n\\n                    </div>\\n    \\n\\n                    <div style=\\\"flex: flex: 1 0 300px; text-align: left; padding: 20px;\\\">\\n      \\n                        <h1 style=\\\"font-size: 3.5rem; color: #fff;\\\">Your Heading Here</h1>\\n\\n                        <p style=\\\"font-size: 1.5rem; color: #fff; margin: 20px 0;\\\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies sodales mi, at ornare elit semper ac.</p>\\n\\n                        <a href=\\\"#\\\" style=\\\"display: inline-block; padding: 10px 20px; background-color: #fff; color: #0056b3; text-decoration: none; border-radius: 5px; font-weight: bold;\\\">SHOP NOW</a>\\n\\n                    </div>\\n\\n                </div>\\n\\n            </div>\\n\"\n                                        }\n                                    }\n                                ],\n                                \"version\": \"2.30.5\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"className\": \"\"\n        },\n        \"e2hc52qm6naaesi\": {\n            \"text\": [\n                {\n                    \"id\": \"r__c13ffd49-f39e-40d7-8d67-d345c0a018c1\",\n                    \"size\": 3,\n                    \"columns\": [\n                        {\n                            \"id\": \"c__6dffc7a4-4378-4247-8ffd-07d956ce4939\",\n                            \"size\": 1,\n                            \"data\": {\n                                \"time\": 1729073245138,\n                                \"blocks\": [\n                                    {\n                                        \"id\": \"PjJh9eW0O7\",\n                                        \"type\": \"header\",\n                                        \"data\": {\n                                            \"text\": \"Kids shoes collection\",\n                                            \"level\": 3\n                                        }\n                                    },\n                                    {\n                                        \"id\": \"CHsT6VaRCw\",\n                                        \"type\": \"paragraph\",\n                                        \"data\": {\n                                            \"text\": \"Constructed from luxury nylons, leathers, and custom hardware, featuring sport details such as hidden breathing vents, waterproof + antimicrobial linings, and more.\"\n                                        }\n                                    },\n                                    {\n                                        \"id\": \"-0lRctONo9\",\n                                        \"type\": \"raw\",\n                                        \"data\": {\n                                            \"html\": \"\\n            <a href=\\\"/kids\\\" class=\\\"button primary\\\">\\n                <span>Shop kids</span>\\n            </a>\"\n                                        }\n                                    }\n                                ],\n                                \"version\": \"2.30.5\"\n                            }\n                        },\n                        {\n                            \"id\": \"c__ca76b2e3-65e3-4eb3-83cb-7ffdfba41208\",\n                            \"size\": 1,\n                            \"data\": {\n                                \"time\": 1729073245139,\n                                \"blocks\": [\n                                    {\n                                        \"id\": \"2K_v3fp7Dd\",\n                                        \"type\": \"header\",\n                                        \"data\": {\n                                            \"text\": \"Women shoes collection\",\n                                            \"level\": 3\n                                        }\n                                    },\n                                    {\n                                        \"id\": \"XiPHWtWbZm\",\n                                        \"type\": \"paragraph\",\n                                        \"data\": {\n                                            \"text\": \"Constructed from luxury nylons, leathers, and custom hardware, featuring sport details such as hidden breathing vents, waterproof + antimicrobial linings, and more.\"\n                                        }\n                                    },\n                                    {\n                                        \"id\": \"f9KXlEkYmu\",\n                                        \"type\": \"raw\",\n                                        \"data\": {\n                                            \"html\": \"\\n            <a href=\\\"/women\\\" class=\\\"button primary\\\">\\n                <span>Shop women</span>\\n            </a>\"\n                                        }\n                                    }\n                                ],\n                                \"version\": \"2.30.5\"\n                            }\n                        },\n                        {\n                            \"id\": \"c__2872ebd9-7f79-442b-bade-6c19d74220ef\",\n                            \"size\": 1,\n                            \"data\": {\n                                \"time\": 1729073245142,\n                                \"blocks\": [\n                                    {\n                                        \"id\": \"mxTqYRjSTw\",\n                                        \"type\": \"header\",\n                                        \"data\": {\n                                            \"text\": \"Men shoes collection\",\n                                            \"level\": 3\n                                        }\n                                    },\n                                    {\n                                        \"id\": \"p-frIk8CU-\",\n                                        \"type\": \"paragraph\",\n                                        \"data\": {\n                                            \"text\": \"Constructed from luxury nylons, leathers, and custom hardware, featuring sport details such as hidden breathing vents, waterproof + antimicrobial linings, and more.\"\n                                        }\n                                    },\n                                    {\n                                        \"id\": \"AoCaoHwyWd\",\n                                        \"type\": \"raw\",\n                                        \"data\": {\n                                            \"html\": \"\\n            <a href=\\\"/men\\\" class=\\\"button primary\\\">\\n                <span>Shop men</span>\\n            </a>\"\n                                        }\n                                    }\n                                ],\n                                \"version\": \"2.30.5\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"className\": \"page-width\"\n        },\n        \"e2hc52qm6naaesl\": {\n            \"collectionId\": 2,\n            \"name\": \"Featured Products\",\n            \"products\": {\n                \"items\": [\n                    {\n                        \"productId\": 180,\n                        \"name\": \"Nike react phantom run flyknit 2\",\n                        \"sku\": \"NJC48508-Pink-X\",\n                        \"price\": {\n                            \"regular\": {\n                                \"value\": 718,\n                                \"text\": \"$718.00\"\n                            },\n                            \"special\": {\n                                \"value\": 718,\n                                \"text\": \"$718.00\"\n                            }\n                        },\n                        \"image\": {\n                            \"alt\": \"Nike react phantom run flyknit 2\",\n                            \"url\": \"https://demositefiles.blob.core.windows.net/images/catalog/1742/9873/plv3335-Pink-listing.png\"\n                        },\n                        \"url\": \"/men/nike-react-phantom-run-flyknit-2-180\"\n                    },\n                    {\n                        \"productId\": 171,\n                        \"name\": \"Nike react infinity run flyknit\",\n                        \"sku\": \"NJC44141-Purple-L\",\n                        \"price\": {\n                            \"regular\": {\n                                \"value\": 543,\n                                \"text\": \"$543.00\"\n                            },\n                            \"special\": {\n                                \"value\": 543,\n                                \"text\": \"$543.00\"\n                            }\n                        },\n                        \"image\": {\n                            \"alt\": \"Nike react infinity run flyknit\",\n                            \"url\": \"https://demositefiles.blob.core.windows.net/images/catalog/9381/3866/plv3878-Purple-listing.png\"\n                        },\n                        \"url\": \"/nike-react-infinity-run-flyknit-171\"\n                    },\n                    {\n                        \"productId\": 165,\n                        \"name\": \"Nike court vision low\",\n                        \"sku\": \"NJC78436-White-S\",\n                        \"price\": {\n                            \"regular\": {\n                                \"value\": 904,\n                                \"text\": \"$904.00\"\n                            },\n                            \"special\": {\n                                \"value\": 904,\n                                \"text\": \"$904.00\"\n                            }\n                        },\n                        \"image\": {\n                            \"alt\": \"Nike court vision low\",\n                            \"url\": \"https://demositefiles.blob.core.windows.net/images/catalog/8957/6157/plv1121-White-listing.png\"\n                        },\n                        \"url\": \"/women/nike-court-vision-low-165\"\n                    },\n                    {\n                        \"productId\": 161,\n                        \"name\": \"Nike zoom fly\",\n                        \"sku\": \"NJC42570-Blue-S\",\n                        \"price\": {\n                            \"regular\": {\n                                \"value\": 930,\n                                \"text\": \"$930.00\"\n                            },\n                            \"special\": {\n                                \"value\": 930,\n                                \"text\": \"$930.00\"\n                            }\n                        },\n                        \"image\": {\n                            \"alt\": \"Nike zoom fly\",\n                            \"url\": \"https://demositefiles.blob.core.windows.net/images/catalog/2832/2828/plv7836-Blue-listing.png\"\n                        },\n                        \"url\": \"/nike-zoom-fly-161\"\n                    }\n                ]\n            }\n        }\n    },\n    \"propsMap\": {\n        \"137dcfd8bf7950dd6201684efdcb40a1\": [\n            {\n                \"origin\": \"searchPageUrl\",\n                \"alias\": \"e248uix4m5ibqbk6\"\n            }\n        ],\n        \"5248a628c0ba0eb2edc726fbc70778f8\": [\n            {\n                \"origin\": \"cartUrl\",\n                \"alias\": \"e248uix4m5ibqbk7\"\n            },\n            {\n                \"origin\": \"cart\",\n                \"alias\": \"e248uix4m5ibqbk8\"\n            }\n        ],\n        \"45515ab09f9ce8f561fc40ca4ffb7b2f\": [\n            {\n                \"origin\": \"pageInfo\",\n                \"alias\": \"e248uix4m5ibqbk9\"\n            }\n        ],\n        \"03ce62a99b643c53cea33f6fc2c573f5\": [\n            {\n                \"origin\": \"themeConfig\",\n                \"alias\": \"e248uix4m5ibqbka\"\n            }\n        ],\n        \"170528765f0295e4db900fd92ea387bc\": [\n            {\n                \"origin\": \"pageInfo\",\n                \"alias\": \"e248uix4m5ibqbkb\"\n            },\n            {\n                \"origin\": \"themeConfig\",\n                \"alias\": \"e248uix4m5ibqbkc\"\n            }\n        ],\n        \"2aa0bf53e05360bd37f2dd0982998263\": [],\n        \"a20b83833c6ae10ded5077b0943cfef5\": [\n            {\n                \"origin\": \"themeConfig\",\n                \"alias\": \"e248uix4m5ibqbkd\"\n            }\n        ],\n        \"18bf66723f1e3394e1ebb5dce01e8097\": [],\n        \"fef4b1d9ae2122930f9c33edbb982d6e\": [\n            {\n                \"origin\": \"customer\",\n                \"alias\": \"e248uix4m5ibqbke\"\n            },\n            {\n                \"origin\": \"accountUrl\",\n                \"alias\": \"e248uix4m5ibqbkf\"\n            },\n            {\n                \"origin\": \"loginUrl\",\n                \"alias\": \"e248uix4m5ibqbkg\"\n            }\n        ],\n        \"b9b0aede0abb0546fe77c67089bdd6f5\": [\n            {\n                \"origin\": \"collection\",\n                \"alias\": \"e248uix4m5ibqbkh\"\n            }\n        ],\n        \"78d4735155d485f34d387c8394613fb7\": [\n            {\n                \"origin\": \"textWidget\",\n                \"alias\": \"e248uix4m5ibqbkl\"\n            }\n        ],\n        \"d71e8a0220472a4a5360ae305aa98d5b\": [\n            {\n                \"origin\": \"basicMenuWidget\",\n                \"alias\": \"e248uix4m5ibqbkp\"\n            }\n        ],\n        \"e9869af9cb99540caac4704f0a1d6de86\": [\n            {\n                \"origin\": \"basicMenuWidget\",\n                \"alias\": \"e2hc52qm6naaesc\"\n            }\n        ],\n        \"eeaafd73e95d6498bacd4cf7547193432\": [\n            {\n                \"origin\": \"textWidget\",\n                \"alias\": \"e2hc52qm6naaesf\"\n            }\n        ],\n        \"e34342c540db14c50af638377f38d0612\": [\n            {\n                \"origin\": \"textWidget\",\n                \"alias\": \"e2hc52qm6naaesi\"\n            }\n        ],\n        \"ecfb90fc6ee754645a8b80fb4a7cf1d3f\": [\n            {\n                \"origin\": \"collection\",\n                \"alias\": \"e2hc52qm6naaesl\"\n            }\n        ]\n    },\n    \"widgets\": [\n        {\n            \"sortOrder\": 1,\n            \"areaId\": [\n                \"header\"\n            ],\n            \"type\": \"basic_menu\",\n            \"id\": \"e9869af9cb99540caac4704f0a1d6de86\"\n        },\n        {\n            \"sortOrder\": 5,\n            \"areaId\": [\n                \"content\"\n            ],\n            \"type\": \"text_block\",\n            \"id\": \"eeaafd73e95d6498bacd4cf7547193432\"\n        },\n        {\n            \"sortOrder\": 10,\n            \"areaId\": [\n                \"content\"\n            ],\n            \"type\": \"text_block\",\n            \"id\": \"e34342c540db14c50af638377f38d0612\"\n        },\n        {\n            \"sortOrder\": 20,\n            \"areaId\": [\n                \"content\"\n            ],\n            \"type\": \"collection_products\",\n            \"id\": \"ecfb90fc6ee754645a8b80fb4a7cf1d3f\"\n        }\n    ],\n    \"notifications\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "goto_shoe",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/men/nike-react-phantom-run-flyknit-2-180?ajax=true",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"men",
+						"nike-react-phantom-run-flyknit-2-180"
+					],
+					"query": [
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "goto_shoe",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/men/nike-react-phantom-run-flyknit-2-180?ajax=true",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"men",
+								"nike-react-phantom-run-flyknit-2-180"
+							],
+							"query": [
+								{
+									"key": "ajax",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "7041"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Feb 2025 07:14:57 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b81-VflW1uzMlvM4wxJdf3tZXUNPM30\""
+						},
+						{
+							"key": "request-context",
+							"value": "appId=cid-v1:"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"eContext\": {\n        \"graphqlResponse\": {\n            \"e248uix4m5ibqb5x\": \"https://demo.evershop.io/search\",\n            \"e248uix4m5ibqb5y\": {\n                \"attributes\": [\n                    {\n                        \"attributeName\": \"Brand\",\n                        \"attributeCode\": \"brand\",\n                        \"optionText\": \"Nike\"\n                    },\n                    {\n                        \"attributeName\": \"Color\",\n                        \"attributeCode\": \"color\",\n                        \"optionText\": \"Pink\"\n                    }\n                ]\n            },\n            \"e248uix4m5ibqb5z\": {\n                \"description\": [\n                    {\n                        \"id\": \"r__ca5a74f0-173f-4121-ad6c-c7d3f20d2a3b\",\n                        \"size\": 1,\n                        \"columns\": [\n                            {\n                                \"id\": \"c__37f38b5f-8a95-4222-8d13-e9cdedb37ccf\",\n                                \"size\": 1,\n                                \"data\": {\n                                    \"time\": 1725709014759,\n                                    \"blocks\": [\n                                        {\n                                            \"id\": \"mjUrCCjG7r\",\n                                            \"type\": \"paragraph\",\n                                            \"data\": {\n                                                \"text\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat mi eget elit elementum, id pulvinar tellus eleifend.\"\n                                            }\n                                        },\n                                        {\n                                            \"id\": \"JKTM4rVnx9\",\n                                            \"type\": \"paragraph\",\n                                            \"data\": {\n                                                \"text\": \"Integer porttitor elit id euismod elementum. Nulla vel molestie massa, eget iaculis elit. Quisque a tortor vel lectus ultricies pretium quis non purus. Pellentesque molestie leo eget rutrum tristique.\"\n                                            }\n                                        }\n                                    ],\n                                    \"version\": \"2.30.2\"\n                                }\n                            }\n                        ]\n                    }\n                ]\n            },\n            \"e248uix4m5ibqb60\": {\n                \"productId\": 180,\n                \"sku\": \"NJC48508-Pink-X\",\n                \"name\": \"Nike react phantom run flyknit 2\",\n                \"gallery\": [\n                    {\n                        \"thumb\": \"https://demositefiles.blob.core.windows.net/images/catalog/5229/3226/plv6375-Pink-thumb.png\"\n                    }\n                ],\n                \"inventory\": {\n                    \"isInStock\": true\n                }\n            },\n            \"e248uix4m5ibqb61\": \"https://demo.evershop.io/api/cart/mine/items\",\n            \"e248uix4m5ibqb62\": {\n                \"name\": \"Nike react phantom run flyknit 2\",\n                \"sku\": \"NJC48508-Pink-X\",\n                \"price\": {\n                    \"regular\": {\n                        \"value\": 718,\n                        \"text\": \"$718.00\"\n                    },\n                    \"special\": {\n                        \"value\": 718,\n                        \"text\": \"$718.00\"\n                    }\n                }\n            },\n            \"e248uix4m5ibqb63\": {\n                \"uuid\": \"3eb136a6-d4bb-4629-aa9c-607000ffc283\",\n                \"image\": {\n                    \"alt\": \"Nike react phantom run flyknit 2\",\n                    \"thumb\": \"https://demositefiles.blob.core.windows.net/images/catalog/1742/9873/plv3335-Pink-thumb.png\",\n                    \"single\": \"https://demositefiles.blob.core.windows.net/images/catalog/1742/9873/plv3335-Pink-single.png\"\n                },\n                \"gallery\": [\n                    {\n                        \"alt\": \"Nike react phantom run flyknit 2\",\n                        \"thumb\": \"https://demositefiles.blob.core.windows.net/images/catalog/5229/3226/plv6375-Pink-thumb.png\",\n                        \"single\": \"https://demositefiles.blob.core.windows.net/images/catalog/5229/3226/plv6375-Pink-single.png\"\n                    }\n                ]\n            },\n            \"e248uix4m5ibqb64\": {\n                \"options\": []\n            },\n            \"e248uix4m5ibqb65\": {\n                \"url\": \"https://demo.evershop.io/men/nike-react-phantom-run-flyknit-2-180?ajax=true\"\n            },\n            \"e248uix4m5ibqb66\": {\n                \"variantGroup\": {\n                    \"variantAttributes\": [\n                        {\n                            \"attributeId\": 2,\n                            \"attributeCode\": \"size\",\n                            \"attributeName\": \"Size\",\n                            \"options\": [\n                                {\n                                    \"optionId\": 4,\n                                    \"optionText\": \"X\",\n                                    \"productId\": 180\n                                },\n                                {\n                                    \"optionId\": 4,\n                                    \"optionText\": \"X\",\n                                    \"productId\": 178\n                                },\n                                {\n                                    \"optionId\": 4,\n                                    \"optionText\": \"X\",\n                                    \"productId\": 182\n                                },\n                                {\n                                    \"optionId\": 25,\n                                    \"optionText\": \"S\",\n                                    \"productId\": 181\n                                },\n                                {\n                                    \"optionId\": 25,\n                                    \"optionText\": \"S\",\n                                    \"productId\": 179\n                                },\n                                {\n                                    \"optionId\": 25,\n                                    \"optionText\": \"S\",\n                                    \"productId\": 177\n                                }\n                            ]\n                        },\n                        {\n                            \"attributeId\": 3,\n                            \"attributeCode\": \"color\",\n                            \"attributeName\": \"Color\",\n                            \"options\": [\n                                {\n                                    \"optionId\": 14,\n                                    \"optionText\": \"Black\",\n                                    \"productId\": 182\n                                },\n                                {\n                                    \"optionId\": 14,\n                                    \"optionText\": \"Black\",\n                                    \"productId\": 181\n                                },\n                                {\n                                    \"optionId\": 17,\n                                    \"optionText\": \"Green\",\n                                    \"productId\": 178\n                                },\n                                {\n                                    \"optionId\": 17,\n                                    \"optionText\": \"Green\",\n                                    \"productId\": 177\n                                },\n                                {\n                                    \"optionId\": 19,\n                                    \"optionText\": \"Pink\",\n                                    \"productId\": 179\n                                },\n                                {\n                                    \"optionId\": 19,\n                                    \"optionText\": \"Pink\",\n                                    \"productId\": 180\n                                }\n                            ]\n                        }\n                    ],\n                    \"items\": [\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 4\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 19\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 4\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 17\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 4\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 14\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 14\n                                },\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 25\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 17\n                                },\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 25\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 19\n                                },\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 25\n                                }\n                            ]\n                        }\n                    ]\n                }\n            },\n            \"e248uix4m5ibqb67\": \"https://demo.evershop.io/cart\",\n            \"e248uix4m5ibqb68\": null,\n            \"e248uix4m5ibqb69\": {\n                \"breadcrumbs\": [\n                    {\n                        \"title\": \"Home\",\n                        \"url\": \"/\"\n                    },\n                    {\n                        \"title\": \"Men\",\n                        \"url\": \"/men\"\n                    },\n                    {\n                        \"title\": \"Nike React Phantom Run Flyknit 2\",\n                        \"url\": \"https://demo.evershop.io/men/nike-react-phantom-run-flyknit-2-180?ajax=true\"\n                    }\n                ]\n            },\n            \"e248uix4m5ibqb6a\": {\n                \"copyRight\": \"© 2022 Evershop. All Rights Reserved.\"\n            },\n            \"e248uix4m5ibqb6b\": {\n                \"title\": \"Nike React Phantom Run Flyknit 2\",\n                \"description\": \"Nike React Phantom Run Flyknit 2\"\n            },\n            \"e248uix4m5ibqb6c\": {\n                \"headTags\": {\n                    \"metas\": [\n                        {\n                            \"name\": \"robots\",\n                            \"content\": \"noindex\",\n                            \"charSet\": null,\n                            \"httpEquiv\": null,\n                            \"property\": null,\n                            \"itemProp\": null,\n                            \"itemType\": null,\n                            \"itemID\": null,\n                            \"lang\": null\n                        }\n                    ],\n                    \"links\": [],\n                    \"scripts\": [],\n                    \"base\": null\n                }\n            },\n            \"e248uix4m5ibqb6d\": {\n                \"logo\": {\n                    \"src\": null,\n                    \"alt\": null,\n                    \"width\": null,\n                    \"height\": null\n                }\n            },\n            \"e248uix4m5ibqb6e\": null,\n            \"e248uix4m5ibqb6f\": \"https://demo.evershop.io/account\",\n            \"e248uix4m5ibqb6g\": \"https://demo.evershop.io/account/login\",\n            \"e2hc52qm6naego7\": {\n                \"menus\": [\n                    {\n                        \"id\": \"2hc52qm6naegoy\",\n                        \"name\": \"Shop ❤️\",\n                        \"url\": \"javascript:void(0)\",\n                        \"type\": \"custom\",\n                        \"uuid\": \"javascript:void(0)\",\n                        \"children\": [\n                            {\n                                \"name\": \"Men\",\n                                \"url\": \"/men\",\n                                \"type\": \"custom\",\n                                \"uuid\": \"/men\"\n                            },\n                            {\n                                \"name\": \"Women\",\n                                \"url\": \"/women\",\n                                \"type\": \"custom\",\n                                \"uuid\": \"/women\"\n                            }\n                        ]\n                    },\n                    {\n                        \"id\": \"2hc52qm6naegp1\",\n                        \"name\": \"About us\",\n                        \"url\": \"/page/about-us\",\n                        \"type\": \"custom\",\n                        \"uuid\": \"/page/about-us\",\n                        \"children\": []\n                    }\n                ],\n                \"isMain\": true,\n                \"className\": \"\"\n            }\n        },\n        \"propsMap\": {\n            \"137dcfd8bf7950dd6201684efdcb40a1\": [\n                {\n                    \"origin\": \"searchPageUrl\",\n                    \"alias\": \"e248uix4m5ibqb5x\"\n                }\n            ],\n            \"e4ab3d4f0ea86bebb04629f56c069e9c\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb5y\"\n                }\n            ],\n            \"46cb417b95efad524a67c4615875e035\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb5z\"\n                }\n            ],\n            \"caa37b6d744f967065b272cca5eeb693\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb60\"\n                },\n                {\n                    \"origin\": \"action\",\n                    \"alias\": \"e248uix4m5ibqb61\"\n                }\n            ],\n            \"4dbbd952ec9ff5ae3bd84215fe3ed686\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb62\"\n                }\n            ],\n            \"402857eef7671c118012f69fe210a450\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb63\"\n                }\n            ],\n            \"efafb36000c919a9834ec55ad7efb2b8\": [],\n            \"1e2019d92b8e09581963626092648138\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb64\"\n                }\n            ],\n            \"98f1ff6c860c91055b77df1c8219ccaa\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqb65\"\n                },\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb66\"\n                }\n            ],\n            \"5248a628c0ba0eb2edc726fbc70778f8\": [\n                {\n                    \"origin\": \"cartUrl\",\n                    \"alias\": \"e248uix4m5ibqb67\"\n                },\n                {\n                    \"origin\": \"cart\",\n                    \"alias\": \"e248uix4m5ibqb68\"\n                }\n            ],\n            \"45515ab09f9ce8f561fc40ca4ffb7b2f\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqb69\"\n                }\n            ],\n            \"03ce62a99b643c53cea33f6fc2c573f5\": [\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqb6a\"\n                }\n            ],\n            \"170528765f0295e4db900fd92ea387bc\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqb6b\"\n                },\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqb6c\"\n                }\n            ],\n            \"2aa0bf53e05360bd37f2dd0982998263\": [],\n            \"a20b83833c6ae10ded5077b0943cfef5\": [\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqb6d\"\n                }\n            ],\n            \"18bf66723f1e3394e1ebb5dce01e8097\": [],\n            \"fef4b1d9ae2122930f9c33edbb982d6e\": [\n                {\n                    \"origin\": \"customer\",\n                    \"alias\": \"e248uix4m5ibqb6e\"\n                },\n                {\n                    \"origin\": \"accountUrl\",\n                    \"alias\": \"e248uix4m5ibqb6f\"\n                },\n                {\n                    \"origin\": \"loginUrl\",\n                    \"alias\": \"e248uix4m5ibqb6g\"\n                }\n            ],\n            \"b9b0aede0abb0546fe77c67089bdd6f5\": [\n                {\n                    \"origin\": \"collection\",\n                    \"alias\": \"e248uix4m5ibqb6h\"\n                }\n            ],\n            \"78d4735155d485f34d387c8394613fb7\": [\n                {\n                    \"origin\": \"textWidget\",\n                    \"alias\": \"e248uix4m5ibqb6l\"\n                }\n            ],\n            \"d71e8a0220472a4a5360ae305aa98d5b\": [\n                {\n                    \"origin\": \"basicMenuWidget\",\n                    \"alias\": \"e248uix4m5ibqb6p\"\n                }\n            ],\n            \"e9869af9cb99540caac4704f0a1d6de86\": [\n                {\n                    \"origin\": \"basicMenuWidget\",\n                    \"alias\": \"e2hc52qm6naego7\"\n                }\n            ]\n        },\n        \"widgets\": [\n            {\n                \"sortOrder\": 1,\n                \"areaId\": [\n                    \"header\"\n                ],\n                \"type\": \"basic_menu\",\n                \"id\": \"e9869af9cb99540caac4704f0a1d6de86\"\n            }\n        ],\n        \"notifications\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "search_small_black_shoe",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/men/nike-react-phantom-run-flyknit-2-180?color=14&size=25&ajax=true",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"men",
+						"nike-react-phantom-run-flyknit-2-180"
+					],
+					"query": [
+						{
+							"key": "color",
+							"value": "14",
+							"description": "black"
+						},
+						{
+							"key": "size",
+							"value": "25",
+							"description": "small"
+						},
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "small_sized_black_shoe",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/men/nike-react-phantom-run-flyknit-2-180?color=14&size=25",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"men",
+								"nike-react-phantom-run-flyknit-2-180"
+							],
+							"query": [
+								{
+									"key": "color",
+									"value": "14",
+									"description": "black"
+								},
+								{
+									"key": "size",
+									"value": "25",
+									"description": "small"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "19272"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Feb 2025 07:15:05 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4b48-BrH0z6ETxXnton5eieKjm5hn4VM\""
+						},
+						{
+							"key": "request-context",
+							"value": "appId=cid-v1:"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"graphqlResponse\": {\n        \"e248uix4m5ibqb5x\": \"https://demo.evershop.io/search\",\n        \"e248uix4m5ibqb5y\": {\n            \"attributes\": [\n                {\n                    \"attributeName\": \"Brand\",\n                    \"attributeCode\": \"brand\",\n                    \"optionText\": \"Nike\"\n                },\n                {\n                    \"attributeName\": \"Color\",\n                    \"attributeCode\": \"color\",\n                    \"optionText\": \"Pink\"\n                }\n            ]\n        },\n        \"e248uix4m5ibqb5z\": {\n            \"description\": [\n                {\n                    \"id\": \"r__ca5a74f0-173f-4121-ad6c-c7d3f20d2a3b\",\n                    \"size\": 1,\n                    \"columns\": [\n                        {\n                            \"id\": \"c__37f38b5f-8a95-4222-8d13-e9cdedb37ccf\",\n                            \"size\": 1,\n                            \"data\": {\n                                \"time\": 1725709014759,\n                                \"blocks\": [\n                                    {\n                                        \"id\": \"mjUrCCjG7r\",\n                                        \"type\": \"paragraph\",\n                                        \"data\": {\n                                            \"text\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat mi eget elit elementum, id pulvinar tellus eleifend.\"\n                                        }\n                                    },\n                                    {\n                                        \"id\": \"JKTM4rVnx9\",\n                                        \"type\": \"paragraph\",\n                                        \"data\": {\n                                            \"text\": \"Integer porttitor elit id euismod elementum. Nulla vel molestie massa, eget iaculis elit. Quisque a tortor vel lectus ultricies pretium quis non purus. Pellentesque molestie leo eget rutrum tristique.\"\n                                        }\n                                    }\n                                ],\n                                \"version\": \"2.30.2\"\n                            }\n                        }\n                    ]\n                }\n            ]\n        },\n        \"e248uix4m5ibqb60\": {\n            \"productId\": 180,\n            \"sku\": \"NJC48508-Pink-X\",\n            \"name\": \"Nike react phantom run flyknit 2\",\n            \"gallery\": [\n                {\n                    \"thumb\": \"https://demositefiles.blob.core.windows.net/images/catalog/5229/3226/plv6375-Pink-thumb.png\"\n                }\n            ],\n            \"inventory\": {\n                \"isInStock\": true\n            }\n        },\n        \"e248uix4m5ibqb61\": \"https://demo.evershop.io/api/cart/mine/items\",\n        \"e248uix4m5ibqb62\": {\n            \"name\": \"Nike react phantom run flyknit 2\",\n            \"sku\": \"NJC48508-Pink-X\",\n            \"price\": {\n                \"regular\": {\n                    \"value\": 718,\n                    \"text\": \"$718.00\"\n                },\n                \"special\": {\n                    \"value\": 718,\n                    \"text\": \"$718.00\"\n                }\n            }\n        },\n        \"e248uix4m5ibqb63\": {\n            \"uuid\": \"3eb136a6-d4bb-4629-aa9c-607000ffc283\",\n            \"image\": {\n                \"alt\": \"Nike react phantom run flyknit 2\",\n                \"thumb\": \"https://demositefiles.blob.core.windows.net/images/catalog/1742/9873/plv3335-Pink-thumb.png\",\n                \"single\": \"https://demositefiles.blob.core.windows.net/images/catalog/1742/9873/plv3335-Pink-single.png\"\n            },\n            \"gallery\": [\n                {\n                    \"alt\": \"Nike react phantom run flyknit 2\",\n                    \"thumb\": \"https://demositefiles.blob.core.windows.net/images/catalog/5229/3226/plv6375-Pink-thumb.png\",\n                    \"single\": \"https://demositefiles.blob.core.windows.net/images/catalog/5229/3226/plv6375-Pink-single.png\"\n                }\n            ]\n        },\n        \"e248uix4m5ibqb64\": {\n            \"options\": []\n        },\n        \"e248uix4m5ibqb65\": {\n            \"url\": \"https://demo.evershop.io/men/nike-react-phantom-run-flyknit-2-180?color=14&size=25\"\n        },\n        \"e248uix4m5ibqb66\": {\n            \"variantGroup\": {\n                \"variantAttributes\": [\n                    {\n                        \"attributeId\": 2,\n                        \"attributeCode\": \"size\",\n                        \"attributeName\": \"Size\",\n                        \"options\": [\n                            {\n                                \"optionId\": 4,\n                                \"optionText\": \"X\",\n                                \"productId\": 180\n                            },\n                            {\n                                \"optionId\": 4,\n                                \"optionText\": \"X\",\n                                \"productId\": 178\n                            },\n                            {\n                                \"optionId\": 4,\n                                \"optionText\": \"X\",\n                                \"productId\": 182\n                            },\n                            {\n                                \"optionId\": 25,\n                                \"optionText\": \"S\",\n                                \"productId\": 181\n                            },\n                            {\n                                \"optionId\": 25,\n                                \"optionText\": \"S\",\n                                \"productId\": 179\n                            },\n                            {\n                                \"optionId\": 25,\n                                \"optionText\": \"S\",\n                                \"productId\": 177\n                            }\n                        ]\n                    },\n                    {\n                        \"attributeId\": 3,\n                        \"attributeCode\": \"color\",\n                        \"attributeName\": \"Color\",\n                        \"options\": [\n                            {\n                                \"optionId\": 14,\n                                \"optionText\": \"Black\",\n                                \"productId\": 182\n                            },\n                            {\n                                \"optionId\": 14,\n                                \"optionText\": \"Black\",\n                                \"productId\": 181\n                            },\n                            {\n                                \"optionId\": 17,\n                                \"optionText\": \"Green\",\n                                \"productId\": 178\n                            },\n                            {\n                                \"optionId\": 17,\n                                \"optionText\": \"Green\",\n                                \"productId\": 177\n                            },\n                            {\n                                \"optionId\": 19,\n                                \"optionText\": \"Pink\",\n                                \"productId\": 179\n                            },\n                            {\n                                \"optionId\": 19,\n                                \"optionText\": \"Pink\",\n                                \"productId\": 180\n                            }\n                        ]\n                    }\n                ],\n                \"items\": [\n                    {\n                        \"attributes\": [\n                            {\n                                \"attributeCode\": \"size\",\n                                \"optionId\": 4\n                            },\n                            {\n                                \"attributeCode\": \"color\",\n                                \"optionId\": 19\n                            }\n                        ]\n                    },\n                    {\n                        \"attributes\": [\n                            {\n                                \"attributeCode\": \"size\",\n                                \"optionId\": 4\n                            },\n                            {\n                                \"attributeCode\": \"color\",\n                                \"optionId\": 17\n                            }\n                        ]\n                    },\n                    {\n                        \"attributes\": [\n                            {\n                                \"attributeCode\": \"size\",\n                                \"optionId\": 4\n                            },\n                            {\n                                \"attributeCode\": \"color\",\n                                \"optionId\": 14\n                            }\n                        ]\n                    },\n                    {\n                        \"attributes\": [\n                            {\n                                \"attributeCode\": \"color\",\n                                \"optionId\": 14\n                            },\n                            {\n                                \"attributeCode\": \"size\",\n                                \"optionId\": 25\n                            }\n                        ]\n                    },\n                    {\n                        \"attributes\": [\n                            {\n                                \"attributeCode\": \"color\",\n                                \"optionId\": 17\n                            },\n                            {\n                                \"attributeCode\": \"size\",\n                                \"optionId\": 25\n                            }\n                        ]\n                    },\n                    {\n                        \"attributes\": [\n                            {\n                                \"attributeCode\": \"color\",\n                                \"optionId\": 19\n                            },\n                            {\n                                \"attributeCode\": \"size\",\n                                \"optionId\": 25\n                            }\n                        ]\n                    }\n                ]\n            }\n        },\n        \"e248uix4m5ibqb67\": \"https://demo.evershop.io/cart\",\n        \"e248uix4m5ibqb68\": null,\n        \"e248uix4m5ibqb69\": {\n            \"breadcrumbs\": [\n                {\n                    \"title\": \"Home\",\n                    \"url\": \"/\"\n                },\n                {\n                    \"title\": \"Men\",\n                    \"url\": \"/men\"\n                },\n                {\n                    \"title\": \"Nike React Phantom Run Flyknit 2\",\n                    \"url\": \"https://demo.evershop.io/men/nike-react-phantom-run-flyknit-2-180?color=14&size=25\"\n                }\n            ]\n        },\n        \"e248uix4m5ibqb6a\": {\n            \"copyRight\": \"© 2022 Evershop. All Rights Reserved.\"\n        },\n        \"e248uix4m5ibqb6b\": {\n            \"title\": \"Nike React Phantom Run Flyknit 2\",\n            \"description\": \"Nike React Phantom Run Flyknit 2\"\n        },\n        \"e248uix4m5ibqb6c\": {\n            \"headTags\": {\n                \"metas\": [\n                    {\n                        \"name\": \"robots\",\n                        \"content\": \"noindex\",\n                        \"charSet\": null,\n                        \"httpEquiv\": null,\n                        \"property\": null,\n                        \"itemProp\": null,\n                        \"itemType\": null,\n                        \"itemID\": null,\n                        \"lang\": null\n                    }\n                ],\n                \"links\": [],\n                \"scripts\": [],\n                \"base\": null\n            }\n        },\n        \"e248uix4m5ibqb6d\": {\n            \"logo\": {\n                \"src\": null,\n                \"alt\": null,\n                \"width\": null,\n                \"height\": null\n            }\n        },\n        \"e248uix4m5ibqb6e\": null,\n        \"e248uix4m5ibqb6f\": \"https://demo.evershop.io/account\",\n        \"e248uix4m5ibqb6g\": \"https://demo.evershop.io/account/login\",\n        \"e2hc52qm6naemtl\": {\n            \"menus\": [\n                {\n                    \"id\": \"2hc52qm6naemu5\",\n                    \"name\": \"Shop ❤️\",\n                    \"url\": \"javascript:void(0)\",\n                    \"type\": \"custom\",\n                    \"uuid\": \"javascript:void(0)\",\n                    \"children\": [\n                        {\n                            \"name\": \"Men\",\n                            \"url\": \"/men\",\n                            \"type\": \"custom\",\n                            \"uuid\": \"/men\"\n                        },\n                        {\n                            \"name\": \"Women\",\n                            \"url\": \"/women\",\n                            \"type\": \"custom\",\n                            \"uuid\": \"/women\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": \"2hc52qm6naemu8\",\n                    \"name\": \"About us\",\n                    \"url\": \"/page/about-us\",\n                    \"type\": \"custom\",\n                    \"uuid\": \"/page/about-us\",\n                    \"children\": []\n                }\n            ],\n            \"isMain\": true,\n            \"className\": \"\"\n        }\n    },\n    \"propsMap\": {\n        \"137dcfd8bf7950dd6201684efdcb40a1\": [\n            {\n                \"origin\": \"searchPageUrl\",\n                \"alias\": \"e248uix4m5ibqb5x\"\n            }\n        ],\n        \"e4ab3d4f0ea86bebb04629f56c069e9c\": [\n            {\n                \"origin\": \"product\",\n                \"alias\": \"e248uix4m5ibqb5y\"\n            }\n        ],\n        \"46cb417b95efad524a67c4615875e035\": [\n            {\n                \"origin\": \"product\",\n                \"alias\": \"e248uix4m5ibqb5z\"\n            }\n        ],\n        \"caa37b6d744f967065b272cca5eeb693\": [\n            {\n                \"origin\": \"product\",\n                \"alias\": \"e248uix4m5ibqb60\"\n            },\n            {\n                \"origin\": \"action\",\n                \"alias\": \"e248uix4m5ibqb61\"\n            }\n        ],\n        \"4dbbd952ec9ff5ae3bd84215fe3ed686\": [\n            {\n                \"origin\": \"product\",\n                \"alias\": \"e248uix4m5ibqb62\"\n            }\n        ],\n        \"402857eef7671c118012f69fe210a450\": [\n            {\n                \"origin\": \"product\",\n                \"alias\": \"e248uix4m5ibqb63\"\n            }\n        ],\n        \"efafb36000c919a9834ec55ad7efb2b8\": [],\n        \"1e2019d92b8e09581963626092648138\": [\n            {\n                \"origin\": \"product\",\n                \"alias\": \"e248uix4m5ibqb64\"\n            }\n        ],\n        \"98f1ff6c860c91055b77df1c8219ccaa\": [\n            {\n                \"origin\": \"pageInfo\",\n                \"alias\": \"e248uix4m5ibqb65\"\n            },\n            {\n                \"origin\": \"product\",\n                \"alias\": \"e248uix4m5ibqb66\"\n            }\n        ],\n        \"5248a628c0ba0eb2edc726fbc70778f8\": [\n            {\n                \"origin\": \"cartUrl\",\n                \"alias\": \"e248uix4m5ibqb67\"\n            },\n            {\n                \"origin\": \"cart\",\n                \"alias\": \"e248uix4m5ibqb68\"\n            }\n        ],\n        \"45515ab09f9ce8f561fc40ca4ffb7b2f\": [\n            {\n                \"origin\": \"pageInfo\",\n                \"alias\": \"e248uix4m5ibqb69\"\n            }\n        ],\n        \"03ce62a99b643c53cea33f6fc2c573f5\": [\n            {\n                \"origin\": \"themeConfig\",\n                \"alias\": \"e248uix4m5ibqb6a\"\n            }\n        ],\n        \"170528765f0295e4db900fd92ea387bc\": [\n            {\n                \"origin\": \"pageInfo\",\n                \"alias\": \"e248uix4m5ibqb6b\"\n            },\n            {\n                \"origin\": \"themeConfig\",\n                \"alias\": \"e248uix4m5ibqb6c\"\n            }\n        ],\n        \"2aa0bf53e05360bd37f2dd0982998263\": [],\n        \"a20b83833c6ae10ded5077b0943cfef5\": [\n            {\n                \"origin\": \"themeConfig\",\n                \"alias\": \"e248uix4m5ibqb6d\"\n            }\n        ],\n        \"18bf66723f1e3394e1ebb5dce01e8097\": [],\n        \"fef4b1d9ae2122930f9c33edbb982d6e\": [\n            {\n                \"origin\": \"customer\",\n                \"alias\": \"e248uix4m5ibqb6e\"\n            },\n            {\n                \"origin\": \"accountUrl\",\n                \"alias\": \"e248uix4m5ibqb6f\"\n            },\n            {\n                \"origin\": \"loginUrl\",\n                \"alias\": \"e248uix4m5ibqb6g\"\n            }\n        ],\n        \"b9b0aede0abb0546fe77c67089bdd6f5\": [\n            {\n                \"origin\": \"collection\",\n                \"alias\": \"e248uix4m5ibqb6h\"\n            }\n        ],\n        \"78d4735155d485f34d387c8394613fb7\": [\n            {\n                \"origin\": \"textWidget\",\n                \"alias\": \"e248uix4m5ibqb6l\"\n            }\n        ],\n        \"d71e8a0220472a4a5360ae305aa98d5b\": [\n            {\n                \"origin\": \"basicMenuWidget\",\n                \"alias\": \"e248uix4m5ibqb6p\"\n            }\n        ],\n        \"e9869af9cb99540caac4704f0a1d6de86\": [\n            {\n                \"origin\": \"basicMenuWidget\",\n                \"alias\": \"e2hc52qm6naemtl\"\n            }\n        ]\n    },\n    \"widgets\": [\n        {\n            \"sortOrder\": 1,\n            \"areaId\": [\n                \"header\"\n            ],\n            \"type\": \"basic_menu\",\n            \"id\": \"e9869af9cb99540caac4704f0a1d6de86\"\n        }\n    ],\n    \"notifications\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "smallsize_blackshoe_find out",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/men/nike-react-phantom-run-flyknit-2-182?color=14&size=25&ajax=true",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"men",
+						"nike-react-phantom-run-flyknit-2-182"
+					],
+					"query": [
+						{
+							"key": "color",
+							"value": "14",
+							"description": "black"
+						},
+						{
+							"key": "size",
+							"value": "25",
+							"description": "small"
+						},
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "small_sized_black_shoe",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/men/nike-react-phantom-run-flyknit-2-180?color=14&size=25",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"men",
+								"nike-react-phantom-run-flyknit-2-180"
+							],
+							"query": [
+								{
+									"key": "color",
+									"value": "14",
+									"description": "black"
+								},
+								{
+									"key": "size",
+									"value": "25",
+									"description": "small"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "19272"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Feb 2025 07:15:05 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4b48-BrH0z6ETxXnton5eieKjm5hn4VM\""
+						},
+						{
+							"key": "request-context",
+							"value": "appId=cid-v1:"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"graphqlResponse\": {\n        \"e248uix4m5ibqb5x\": \"https://demo.evershop.io/search\",\n        \"e248uix4m5ibqb5y\": {\n            \"attributes\": [\n                {\n                    \"attributeName\": \"Brand\",\n                    \"attributeCode\": \"brand\",\n                    \"optionText\": \"Nike\"\n                },\n                {\n                    \"attributeName\": \"Color\",\n                    \"attributeCode\": \"color\",\n                    \"optionText\": \"Pink\"\n                }\n            ]\n        },\n        \"e248uix4m5ibqb5z\": {\n            \"description\": [\n                {\n                    \"id\": \"r__ca5a74f0-173f-4121-ad6c-c7d3f20d2a3b\",\n                    \"size\": 1,\n                    \"columns\": [\n                        {\n                            \"id\": \"c__37f38b5f-8a95-4222-8d13-e9cdedb37ccf\",\n                            \"size\": 1,\n                            \"data\": {\n                                \"time\": 1725709014759,\n                                \"blocks\": [\n                                    {\n                                        \"id\": \"mjUrCCjG7r\",\n                                        \"type\": \"paragraph\",\n                                        \"data\": {\n                                            \"text\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat mi eget elit elementum, id pulvinar tellus eleifend.\"\n                                        }\n                                    },\n                                    {\n                                        \"id\": \"JKTM4rVnx9\",\n                                        \"type\": \"paragraph\",\n                                        \"data\": {\n                                            \"text\": \"Integer porttitor elit id euismod elementum. Nulla vel molestie massa, eget iaculis elit. Quisque a tortor vel lectus ultricies pretium quis non purus. Pellentesque molestie leo eget rutrum tristique.\"\n                                        }\n                                    }\n                                ],\n                                \"version\": \"2.30.2\"\n                            }\n                        }\n                    ]\n                }\n            ]\n        },\n        \"e248uix4m5ibqb60\": {\n            \"productId\": 180,\n            \"sku\": \"NJC48508-Pink-X\",\n            \"name\": \"Nike react phantom run flyknit 2\",\n            \"gallery\": [\n                {\n                    \"thumb\": \"https://demositefiles.blob.core.windows.net/images/catalog/5229/3226/plv6375-Pink-thumb.png\"\n                }\n            ],\n            \"inventory\": {\n                \"isInStock\": true\n            }\n        },\n        \"e248uix4m5ibqb61\": \"https://demo.evershop.io/api/cart/mine/items\",\n        \"e248uix4m5ibqb62\": {\n            \"name\": \"Nike react phantom run flyknit 2\",\n            \"sku\": \"NJC48508-Pink-X\",\n            \"price\": {\n                \"regular\": {\n                    \"value\": 718,\n                    \"text\": \"$718.00\"\n                },\n                \"special\": {\n                    \"value\": 718,\n                    \"text\": \"$718.00\"\n                }\n            }\n        },\n        \"e248uix4m5ibqb63\": {\n            \"uuid\": \"3eb136a6-d4bb-4629-aa9c-607000ffc283\",\n            \"image\": {\n                \"alt\": \"Nike react phantom run flyknit 2\",\n                \"thumb\": \"https://demositefiles.blob.core.windows.net/images/catalog/1742/9873/plv3335-Pink-thumb.png\",\n                \"single\": \"https://demositefiles.blob.core.windows.net/images/catalog/1742/9873/plv3335-Pink-single.png\"\n            },\n            \"gallery\": [\n                {\n                    \"alt\": \"Nike react phantom run flyknit 2\",\n                    \"thumb\": \"https://demositefiles.blob.core.windows.net/images/catalog/5229/3226/plv6375-Pink-thumb.png\",\n                    \"single\": \"https://demositefiles.blob.core.windows.net/images/catalog/5229/3226/plv6375-Pink-single.png\"\n                }\n            ]\n        },\n        \"e248uix4m5ibqb64\": {\n            \"options\": []\n        },\n        \"e248uix4m5ibqb65\": {\n            \"url\": \"https://demo.evershop.io/men/nike-react-phantom-run-flyknit-2-180?color=14&size=25\"\n        },\n        \"e248uix4m5ibqb66\": {\n            \"variantGroup\": {\n                \"variantAttributes\": [\n                    {\n                        \"attributeId\": 2,\n                        \"attributeCode\": \"size\",\n                        \"attributeName\": \"Size\",\n                        \"options\": [\n                            {\n                                \"optionId\": 4,\n                                \"optionText\": \"X\",\n                                \"productId\": 180\n                            },\n                            {\n                                \"optionId\": 4,\n                                \"optionText\": \"X\",\n                                \"productId\": 178\n                            },\n                            {\n                                \"optionId\": 4,\n                                \"optionText\": \"X\",\n                                \"productId\": 182\n                            },\n                            {\n                                \"optionId\": 25,\n                                \"optionText\": \"S\",\n                                \"productId\": 181\n                            },\n                            {\n                                \"optionId\": 25,\n                                \"optionText\": \"S\",\n                                \"productId\": 179\n                            },\n                            {\n                                \"optionId\": 25,\n                                \"optionText\": \"S\",\n                                \"productId\": 177\n                            }\n                        ]\n                    },\n                    {\n                        \"attributeId\": 3,\n                        \"attributeCode\": \"color\",\n                        \"attributeName\": \"Color\",\n                        \"options\": [\n                            {\n                                \"optionId\": 14,\n                                \"optionText\": \"Black\",\n                                \"productId\": 182\n                            },\n                            {\n                                \"optionId\": 14,\n                                \"optionText\": \"Black\",\n                                \"productId\": 181\n                            },\n                            {\n                                \"optionId\": 17,\n                                \"optionText\": \"Green\",\n                                \"productId\": 178\n                            },\n                            {\n                                \"optionId\": 17,\n                                \"optionText\": \"Green\",\n                                \"productId\": 177\n                            },\n                            {\n                                \"optionId\": 19,\n                                \"optionText\": \"Pink\",\n                                \"productId\": 179\n                            },\n                            {\n                                \"optionId\": 19,\n                                \"optionText\": \"Pink\",\n                                \"productId\": 180\n                            }\n                        ]\n                    }\n                ],\n                \"items\": [\n                    {\n                        \"attributes\": [\n                            {\n                                \"attributeCode\": \"size\",\n                                \"optionId\": 4\n                            },\n                            {\n                                \"attributeCode\": \"color\",\n                                \"optionId\": 19\n                            }\n                        ]\n                    },\n                    {\n                        \"attributes\": [\n                            {\n                                \"attributeCode\": \"size\",\n                                \"optionId\": 4\n                            },\n                            {\n                                \"attributeCode\": \"color\",\n                                \"optionId\": 17\n                            }\n                        ]\n                    },\n                    {\n                        \"attributes\": [\n                            {\n                                \"attributeCode\": \"size\",\n                                \"optionId\": 4\n                            },\n                            {\n                                \"attributeCode\": \"color\",\n                                \"optionId\": 14\n                            }\n                        ]\n                    },\n                    {\n                        \"attributes\": [\n                            {\n                                \"attributeCode\": \"color\",\n                                \"optionId\": 14\n                            },\n                            {\n                                \"attributeCode\": \"size\",\n                                \"optionId\": 25\n                            }\n                        ]\n                    },\n                    {\n                        \"attributes\": [\n                            {\n                                \"attributeCode\": \"color\",\n                                \"optionId\": 17\n                            },\n                            {\n                                \"attributeCode\": \"size\",\n                                \"optionId\": 25\n                            }\n                        ]\n                    },\n                    {\n                        \"attributes\": [\n                            {\n                                \"attributeCode\": \"color\",\n                                \"optionId\": 19\n                            },\n                            {\n                                \"attributeCode\": \"size\",\n                                \"optionId\": 25\n                            }\n                        ]\n                    }\n                ]\n            }\n        },\n        \"e248uix4m5ibqb67\": \"https://demo.evershop.io/cart\",\n        \"e248uix4m5ibqb68\": null,\n        \"e248uix4m5ibqb69\": {\n            \"breadcrumbs\": [\n                {\n                    \"title\": \"Home\",\n                    \"url\": \"/\"\n                },\n                {\n                    \"title\": \"Men\",\n                    \"url\": \"/men\"\n                },\n                {\n                    \"title\": \"Nike React Phantom Run Flyknit 2\",\n                    \"url\": \"https://demo.evershop.io/men/nike-react-phantom-run-flyknit-2-180?color=14&size=25\"\n                }\n            ]\n        },\n        \"e248uix4m5ibqb6a\": {\n            \"copyRight\": \"© 2022 Evershop. All Rights Reserved.\"\n        },\n        \"e248uix4m5ibqb6b\": {\n            \"title\": \"Nike React Phantom Run Flyknit 2\",\n            \"description\": \"Nike React Phantom Run Flyknit 2\"\n        },\n        \"e248uix4m5ibqb6c\": {\n            \"headTags\": {\n                \"metas\": [\n                    {\n                        \"name\": \"robots\",\n                        \"content\": \"noindex\",\n                        \"charSet\": null,\n                        \"httpEquiv\": null,\n                        \"property\": null,\n                        \"itemProp\": null,\n                        \"itemType\": null,\n                        \"itemID\": null,\n                        \"lang\": null\n                    }\n                ],\n                \"links\": [],\n                \"scripts\": [],\n                \"base\": null\n            }\n        },\n        \"e248uix4m5ibqb6d\": {\n            \"logo\": {\n                \"src\": null,\n                \"alt\": null,\n                \"width\": null,\n                \"height\": null\n            }\n        },\n        \"e248uix4m5ibqb6e\": null,\n        \"e248uix4m5ibqb6f\": \"https://demo.evershop.io/account\",\n        \"e248uix4m5ibqb6g\": \"https://demo.evershop.io/account/login\",\n        \"e2hc52qm6naemtl\": {\n            \"menus\": [\n                {\n                    \"id\": \"2hc52qm6naemu5\",\n                    \"name\": \"Shop ❤️\",\n                    \"url\": \"javascript:void(0)\",\n                    \"type\": \"custom\",\n                    \"uuid\": \"javascript:void(0)\",\n                    \"children\": [\n                        {\n                            \"name\": \"Men\",\n                            \"url\": \"/men\",\n                            \"type\": \"custom\",\n                            \"uuid\": \"/men\"\n                        },\n                        {\n                            \"name\": \"Women\",\n                            \"url\": \"/women\",\n                            \"type\": \"custom\",\n                            \"uuid\": \"/women\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": \"2hc52qm6naemu8\",\n                    \"name\": \"About us\",\n                    \"url\": \"/page/about-us\",\n                    \"type\": \"custom\",\n                    \"uuid\": \"/page/about-us\",\n                    \"children\": []\n                }\n            ],\n            \"isMain\": true,\n            \"className\": \"\"\n        }\n    },\n    \"propsMap\": {\n        \"137dcfd8bf7950dd6201684efdcb40a1\": [\n            {\n                \"origin\": \"searchPageUrl\",\n                \"alias\": \"e248uix4m5ibqb5x\"\n            }\n        ],\n        \"e4ab3d4f0ea86bebb04629f56c069e9c\": [\n            {\n                \"origin\": \"product\",\n                \"alias\": \"e248uix4m5ibqb5y\"\n            }\n        ],\n        \"46cb417b95efad524a67c4615875e035\": [\n            {\n                \"origin\": \"product\",\n                \"alias\": \"e248uix4m5ibqb5z\"\n            }\n        ],\n        \"caa37b6d744f967065b272cca5eeb693\": [\n            {\n                \"origin\": \"product\",\n                \"alias\": \"e248uix4m5ibqb60\"\n            },\n            {\n                \"origin\": \"action\",\n                \"alias\": \"e248uix4m5ibqb61\"\n            }\n        ],\n        \"4dbbd952ec9ff5ae3bd84215fe3ed686\": [\n            {\n                \"origin\": \"product\",\n                \"alias\": \"e248uix4m5ibqb62\"\n            }\n        ],\n        \"402857eef7671c118012f69fe210a450\": [\n            {\n                \"origin\": \"product\",\n                \"alias\": \"e248uix4m5ibqb63\"\n            }\n        ],\n        \"efafb36000c919a9834ec55ad7efb2b8\": [],\n        \"1e2019d92b8e09581963626092648138\": [\n            {\n                \"origin\": \"product\",\n                \"alias\": \"e248uix4m5ibqb64\"\n            }\n        ],\n        \"98f1ff6c860c91055b77df1c8219ccaa\": [\n            {\n                \"origin\": \"pageInfo\",\n                \"alias\": \"e248uix4m5ibqb65\"\n            },\n            {\n                \"origin\": \"product\",\n                \"alias\": \"e248uix4m5ibqb66\"\n            }\n        ],\n        \"5248a628c0ba0eb2edc726fbc70778f8\": [\n            {\n                \"origin\": \"cartUrl\",\n                \"alias\": \"e248uix4m5ibqb67\"\n            },\n            {\n                \"origin\": \"cart\",\n                \"alias\": \"e248uix4m5ibqb68\"\n            }\n        ],\n        \"45515ab09f9ce8f561fc40ca4ffb7b2f\": [\n            {\n                \"origin\": \"pageInfo\",\n                \"alias\": \"e248uix4m5ibqb69\"\n            }\n        ],\n        \"03ce62a99b643c53cea33f6fc2c573f5\": [\n            {\n                \"origin\": \"themeConfig\",\n                \"alias\": \"e248uix4m5ibqb6a\"\n            }\n        ],\n        \"170528765f0295e4db900fd92ea387bc\": [\n            {\n                \"origin\": \"pageInfo\",\n                \"alias\": \"e248uix4m5ibqb6b\"\n            },\n            {\n                \"origin\": \"themeConfig\",\n                \"alias\": \"e248uix4m5ibqb6c\"\n            }\n        ],\n        \"2aa0bf53e05360bd37f2dd0982998263\": [],\n        \"a20b83833c6ae10ded5077b0943cfef5\": [\n            {\n                \"origin\": \"themeConfig\",\n                \"alias\": \"e248uix4m5ibqb6d\"\n            }\n        ],\n        \"18bf66723f1e3394e1ebb5dce01e8097\": [],\n        \"fef4b1d9ae2122930f9c33edbb982d6e\": [\n            {\n                \"origin\": \"customer\",\n                \"alias\": \"e248uix4m5ibqb6e\"\n            },\n            {\n                \"origin\": \"accountUrl\",\n                \"alias\": \"e248uix4m5ibqb6f\"\n            },\n            {\n                \"origin\": \"loginUrl\",\n                \"alias\": \"e248uix4m5ibqb6g\"\n            }\n        ],\n        \"b9b0aede0abb0546fe77c67089bdd6f5\": [\n            {\n                \"origin\": \"collection\",\n                \"alias\": \"e248uix4m5ibqb6h\"\n            }\n        ],\n        \"78d4735155d485f34d387c8394613fb7\": [\n            {\n                \"origin\": \"textWidget\",\n                \"alias\": \"e248uix4m5ibqb6l\"\n            }\n        ],\n        \"d71e8a0220472a4a5360ae305aa98d5b\": [\n            {\n                \"origin\": \"basicMenuWidget\",\n                \"alias\": \"e248uix4m5ibqb6p\"\n            }\n        ],\n        \"e9869af9cb99540caac4704f0a1d6de86\": [\n            {\n                \"origin\": \"basicMenuWidget\",\n                \"alias\": \"e2hc52qm6naemtl\"\n            }\n        ]\n    },\n    \"widgets\": [\n        {\n            \"sortOrder\": 1,\n            \"areaId\": [\n                \"header\"\n            ],\n            \"type\": \"basic_menu\",\n            \"id\": \"e9869af9cb99540caac4704f0a1d6de86\"\n        }\n    ],\n    \"notifications\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "add_to_cart_black",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\" : \"NJC48508-Green-X\",\r\n    \"qty\" : \"3\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/cart/mine/items",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"cart",
+						"mine",
+						"items"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add_to_cart",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sku\" : \"NJC48508-Black-s\",\r\n    \"qty\" : \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/cart/main/items",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"cart",
+								"main",
+								"items"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "51"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Feb 2025 07:15:19 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"33-y7wUH37vHAJlHE527CwennTE9C4\""
+						},
+						{
+							"key": "request-context",
+							"value": "appId=cid-v1:"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"status\": 500,\n        \"message\": \"Cart not found\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "view_cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/cart?ajax=true",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"cart"
+					],
+					"query": [
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "view_cart",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cart?ajax=true",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart"
+							],
+							"query": [
+								{
+									"key": "ajax",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "3335"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Feb 2025 07:15:30 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d07-FL4YVJo68ZGZevlNQMHY6ODYzKk\""
+						},
+						{
+							"key": "request-context",
+							"value": "appId=cid-v1:"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"eContext\": {\n        \"graphqlResponse\": {\n            \"e248uix4m5ibqb7v\": \"https://demo.evershop.io/search\",\n            \"e248uix4m5ibqb7w\": \"https://demo.evershop.io/cart\",\n            \"e248uix4m5ibqb7x\": null,\n            \"e248uix4m5ibqb7y\": null,\n            \"e248uix4m5ibqb7z\": {\n                \"priceIncludingTax\": true\n            },\n            \"e248uix4m5ibqb80\": null,\n            \"e248uix4m5ibqb81\": {\n                \"priceIncludingTax\": true\n            },\n            \"e248uix4m5ibqb82\": \"https://demo.evershop.io/checkout\",\n            \"e248uix4m5ibqb83\": {\n                \"breadcrumbs\": [\n                    {\n                        \"title\": \"Home\",\n                        \"url\": \"/\"\n                    },\n                    {\n                        \"title\": \"Shopping cart\",\n                        \"url\": \"https://demo.evershop.io/cart?ajax=true\"\n                    }\n                ]\n            },\n            \"e248uix4m5ibqb84\": {\n                \"copyRight\": \"© 2022 Evershop. All Rights Reserved.\"\n            },\n            \"e248uix4m5ibqb85\": {\n                \"title\": \"Shopping cart\",\n                \"description\": \"Shopping cart\"\n            },\n            \"e248uix4m5ibqb86\": {\n                \"headTags\": {\n                    \"metas\": [\n                        {\n                            \"name\": \"robots\",\n                            \"content\": \"noindex\",\n                            \"charSet\": null,\n                            \"httpEquiv\": null,\n                            \"property\": null,\n                            \"itemProp\": null,\n                            \"itemType\": null,\n                            \"itemID\": null,\n                            \"lang\": null\n                        }\n                    ],\n                    \"links\": [],\n                    \"scripts\": [],\n                    \"base\": null\n                }\n            },\n            \"e248uix4m5ibqb87\": {\n                \"logo\": {\n                    \"src\": null,\n                    \"alt\": null,\n                    \"width\": null,\n                    \"height\": null\n                }\n            },\n            \"e248uix4m5ibqb88\": null,\n            \"e248uix4m5ibqb89\": \"https://demo.evershop.io/account\",\n            \"e248uix4m5ibqb8a\": \"https://demo.evershop.io/account/login\",\n            \"e248uix4m5ibqb8b\": null,\n            \"e2hc52qm6naf6ix\": {\n                \"menus\": [\n                    {\n                        \"id\": \"2hc52qm6naf6jj\",\n                        \"name\": \"Shop ❤️\",\n                        \"url\": \"javascript:void(0)\",\n                        \"type\": \"custom\",\n                        \"uuid\": \"javascript:void(0)\",\n                        \"children\": [\n                            {\n                                \"name\": \"Men\",\n                                \"url\": \"/men\",\n                                \"type\": \"custom\",\n                                \"uuid\": \"/men\"\n                            },\n                            {\n                                \"name\": \"Women\",\n                                \"url\": \"/women\",\n                                \"type\": \"custom\",\n                                \"uuid\": \"/women\"\n                            }\n                        ]\n                    },\n                    {\n                        \"id\": \"2hc52qm6naf6jm\",\n                        \"name\": \"About us\",\n                        \"url\": \"/page/about-us\",\n                        \"type\": \"custom\",\n                        \"uuid\": \"/page/about-us\",\n                        \"children\": []\n                    }\n                ],\n                \"isMain\": true,\n                \"className\": \"\"\n            }\n        },\n        \"propsMap\": {\n            \"137dcfd8bf7950dd6201684efdcb40a1\": [\n                {\n                    \"origin\": \"searchPageUrl\",\n                    \"alias\": \"e248uix4m5ibqb7v\"\n                }\n            ],\n            \"5248a628c0ba0eb2edc726fbc70778f8\": [\n                {\n                    \"origin\": \"cartUrl\",\n                    \"alias\": \"e248uix4m5ibqb7w\"\n                },\n                {\n                    \"origin\": \"cart\",\n                    \"alias\": \"e248uix4m5ibqb7x\"\n                }\n            ],\n            \"87b5a6343580ffba5d3cd5dcf3da9b15\": [\n                {\n                    \"origin\": \"cart\",\n                    \"alias\": \"e248uix4m5ibqb7y\"\n                },\n                {\n                    \"origin\": \"setting\",\n                    \"alias\": \"e248uix4m5ibqb7z\"\n                }\n            ],\n            \"0970d39aae36909e09c0cbec65369c02\": [\n                {\n                    \"origin\": \"cart\",\n                    \"alias\": \"e248uix4m5ibqb80\"\n                },\n                {\n                    \"origin\": \"setting\",\n                    \"alias\": \"e248uix4m5ibqb81\"\n                },\n                {\n                    \"origin\": \"checkoutUrl\",\n                    \"alias\": \"e248uix4m5ibqb82\"\n                }\n            ],\n            \"45515ab09f9ce8f561fc40ca4ffb7b2f\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqb83\"\n                }\n            ],\n            \"03ce62a99b643c53cea33f6fc2c573f5\": [\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqb84\"\n                }\n            ],\n            \"170528765f0295e4db900fd92ea387bc\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqb85\"\n                },\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqb86\"\n                }\n            ],\n            \"2aa0bf53e05360bd37f2dd0982998263\": [],\n            \"a20b83833c6ae10ded5077b0943cfef5\": [\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqb87\"\n                }\n            ],\n            \"18bf66723f1e3394e1ebb5dce01e8097\": [],\n            \"fef4b1d9ae2122930f9c33edbb982d6e\": [\n                {\n                    \"origin\": \"customer\",\n                    \"alias\": \"e248uix4m5ibqb88\"\n                },\n                {\n                    \"origin\": \"accountUrl\",\n                    \"alias\": \"e248uix4m5ibqb89\"\n                },\n                {\n                    \"origin\": \"loginUrl\",\n                    \"alias\": \"e248uix4m5ibqb8a\"\n                }\n            ],\n            \"8bdf6e07d5f321c363037c0ecd754c6d\": [\n                {\n                    \"origin\": \"cart\",\n                    \"alias\": \"e248uix4m5ibqb8b\"\n                }\n            ],\n            \"b9b0aede0abb0546fe77c67089bdd6f5\": [\n                {\n                    \"origin\": \"collection\",\n                    \"alias\": \"e248uix4m5ibqb8c\"\n                }\n            ],\n            \"78d4735155d485f34d387c8394613fb7\": [\n                {\n                    \"origin\": \"textWidget\",\n                    \"alias\": \"e248uix4m5ibqb8g\"\n                }\n            ],\n            \"d71e8a0220472a4a5360ae305aa98d5b\": [\n                {\n                    \"origin\": \"basicMenuWidget\",\n                    \"alias\": \"e248uix4m5ibqb8k\"\n                }\n            ],\n            \"e9869af9cb99540caac4704f0a1d6de86\": [\n                {\n                    \"origin\": \"basicMenuWidget\",\n                    \"alias\": \"e2hc52qm6naf6ix\"\n                }\n            ]\n        },\n        \"widgets\": [\n            {\n                \"sortOrder\": 1,\n                \"areaId\": [\n                    \"header\"\n                ],\n                \"type\": \"basic_menu\",\n                \"id\": \"e9869af9cb99540caac4704f0a1d6de86\"\n            }\n        ],\n        \"notifications\": []\n    }\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_URL",
+			"value": "https://demo.evershop.io/",
+			"type": "string"
+		}
+	]
+}
